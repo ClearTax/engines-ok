@@ -1,0 +1,32 @@
+{
+  "name": "engines-ok",
+  "version": "0.1.0",
+  "description": "Check for engines - node/npm",
+  "main": "index.js",
+  "bin": {
+    "engines-check": "index.js"
+  },
+  "scripts": {
+    "prepublishOnly": "npm-audit-ok && package-ok",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClearTax/engines-ok.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClearTax/engines-ok/issues"
+  },
+  "homepage": "https://github.com/ClearTax/engines-ok#readme",
+  "devDependencies": {
+    "prepublish-ok": "^0.3.0"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "log-symbols": "^3.0.0",
+    "semver": "^6.3.0"
+  }
+}
