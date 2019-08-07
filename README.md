@@ -19,7 +19,7 @@ or globally as
 ### Basic
 
 ```shell
-engines-check
+engines-ok
 ```
 
 ### As npm hooks
@@ -28,7 +28,7 @@ package.json
 
 ```js
 "scripts": {
-  "preinstall": "engines-check"
+  "preinstall": "npm i engines-ok@latest -D && engines-ok"
 }
 ```
 

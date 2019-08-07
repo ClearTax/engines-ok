@@ -4,7 +4,7 @@
   "description": "Check for engines - node/npm",
   "main": "index.js",
   "bin": {
-    "engines-check": "index.js"
+    "engines-ok": "index.js"
   },
   "scripts": {
     "prepublishOnly": "npm-audit-ok && package-ok",
