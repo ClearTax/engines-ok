@@ -26,5 +26,5 @@ for (let [eng, version] of Object.entries(engines)) {
 if (isntOk) {
   console.log(chalk.yellow('---------------------------------------------------------------------'))
   console.log(chalk.white(`Please update the above ☝ ${chalk.red('errored')} engines to the required ones in package.json`))
-  process.exit(0)
+  process.exit(1)
 }
