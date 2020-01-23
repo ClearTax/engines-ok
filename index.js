@@ -18,9 +18,11 @@ let installedVersion;
 Object.entries(engines).forEach(engine => {
   const [eng, version] = engine;
   try {
+    // eslint-disable-next-line prefer-destructuring
     installedVersion = execSync(`${eng} --version`)
       .toString()
-      .trim();
+      .trim()
+      .match(/\d+\.?\d*\.?\d*/)[0];
   } catch (err) {
     isntOk = true;
     console.log(
