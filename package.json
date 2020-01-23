@@ -8,6 +8,8 @@
   },
   "scripts": {
     "prepublishOnly": "npm-audit-ok && package-ok",
+    "lint": "eslint '**/*.js'",
+    "lint:fix": "npm run lint -- --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,7 +24,23 @@
   },
   "homepage": "https://github.com/ClearTax/engines-ok#readme",
   "devDependencies": {
-    "prepublish-ok": "^0.3.0"
+    "@cleartax/eslint-config": "^1.1.0",
+    "@typescript-eslint/eslint-plugin": "^2.17.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-eslint-comments": "^3.1.2",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jest": "^23.6.0",
+    "eslint-plugin-json": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-lodash": "^6.0.0",
+    "eslint-plugin-markdown": "^1.0.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "prepublish-ok": "^0.3.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.5"
   },
   "dependencies": {
     "chalk": "^2.4.2",
