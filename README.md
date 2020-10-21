@@ -8,11 +8,11 @@ Checks the engines in *package.json* - **node/npm**
 
 ## Install
 
-`npm i engines-ok -D`
-
-or globally as
-
 `npm i engines-ok -g`
+
+or, if you'd prefer installing it locally within your project, as
+
+`npm i engines-ok -D`
 
 ## Usage
 
@@ -28,7 +28,7 @@ package.json
 
 ```js
 "scripts": {
-  "preinstall": "npm i engines-ok@latest -D && engines-ok"
+  "preinstall": "npx engines-ok"
 }
 ```
 
